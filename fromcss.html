@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my title</title>
+<style type="text/css">
+		
+		form{
+			border: 3px solid #a1a4a8;
+  			border-radius: 8px;
+  			color:#494c4b;
+  			max-width: 30rem;
+  			flex: 1;
+		}
+		
+		.header{
+			background-color: #a1a4a8;			
+			color: #ffffff;
+			padding: 0.5rem;
+		}
+
+		.container{
+
+			padding: 1rem;
+		}
+
+		input[type=text],select,textarea{
+			width: 25rem;
+		  	padding: 0.2rem;
+		  	margin:0.3rem;
+		  	border: 0.05rem solid #a1a4a8;
+		  	border-radius: 4px;
+		  	
+		}
+		#version{
+			width: auto;
+		}
+		input[type=file]{
+			width: 25rem;
+		  	padding: 0.2rem;
+		  	border: 0.05rem solid #a1a4a8;
+		  	border-radius: 4px;
+		  	display: inline-block;
+		  	cursor: pointer;
+		}
+
+		.dropdown{
+			background-color: #4ab28e;
+			border: 0.1rem solid #4ab28e;
+  			font-weight: bold;
+  			padding: 0.2rem;
+  			color: #ffffff;
+		}
+		.btn{
+			margin: 1rem;
+			background-color: #4ab28e;
+			border: 0.2rem solid #4ab28e;
+			border-radius: 0.3rem;
+  			font-weight: bold;
+  			padding: 0.2rem;
+  			color: #ffffff;
+  			float: right;
+  			width: 20%;	
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<header class="header"> Bug Report</header>
+		<div class="container">
+		 Title:*<br>
+  		<input type="text" name="title" required><br>
+  		Description:*<br>
+  		<input type="text" class="desc" name="Description" required style="height: 80px"><br>
+  		Operating system<br>
+  		<select id="Operating System" class="dropdown" name="Operating System">
+		    <option value="Microsoft windows">Microsoft windows</option>
+		    <option value="iOS">iOS</option>
+		    <option value="Linux">Linux</option>
+		    <option value="Macintosh">Macintosh</option>
+		    <option value="Android">Android</option>
+		 </select><br>
+		 Product*<br>
+		 <select id="css tools" class="dropdown" name="css tools" required>
+		    <option value="Formoid">Formoid</option>
+		    <option value="preboot">preboot</option>
+		    <option value="ExtractCss">ExtractCss</option>
+		    <option value="topcoat">topcoat</option>
+		    <option value="trashman">trashman</option>
+		 </select><br>
+		 Version*<br>
+		 <input type="text" name="version" id="version" required><br>
+		 License:<br>
+		 <input type ="radio" name="free"> Free
+		<input type ="radio" name="buisnerr"> Business
+		<br>
+		Severity:<br>
+		<select id="severity" class="dropdown" >
+		    <option value="critical">critical</option>
+		    <option value="medium">medium</option>
+		    <option value="low">low</option>
+		 </select><br>
+		 Attachments:<br>
+		 <input type="file" name="doc"> <br>
+		</div>
+		<hr style="margin: 0;">
+		<footer style="display: flow-root; background-color: #d6d6d6;border-radius: 8px;">
+				<button class="btn" type="input">Send</button>
+		</footer>
+	</form>
+</body>
+</html>
