@@ -23,6 +23,10 @@
 		margin-left:120px;
 		width:920px; 
 		padding:20px;
+
+	}
+	a{
+		color: grey; text-decoration: none;  margin-right:30px;
 	}
 	.bodycontainer{
 		background-color: white;
@@ -35,6 +39,8 @@
 		margin-left:120px;
 		margin-top:20px;
 		margin-bottom:20px;
+
+		height: 360px; text-align: center; line-height: 360px;color: white;
 	}
 	.box2{
 		background-color:#e6e6e6;
@@ -43,23 +49,42 @@
 		margin-top:20px;
 		margin-bottom:20px;
 		color: #737373
+
+		height: 80px; text-align: center; line-height: 40px;
 	}
 	.box3{
 		width:960px; 
 		margin-left:120px; 
 		margin-top:20px; 
+
+		color: #737373; font-weight: bold;
 	}
 	.box4{
 		width:960px;
 		margin-left:120px;
 		margin-top:20px;
 		margin-bottom:50px; 
+		display:flex;
 	}
 	.innerbox{
-		background-color:#333333;
-		width:215px;
+		margin-left:0px;
+		flex:1;
+		width: 215px;
 		height: 315px;
-		margin-right: 20px;
+	}
+	#img{
+		width: 215px;
+		height: 315px;
+	}
+	figure{
+		border:thin silver solid;
+		padding: 2px;
+		margin:0;
+		width: 215px;
+		height: 315px;
+	}
+	figcaption{
+		background-color: lightgrey;
 	}
 	.footercontainer
 	{
@@ -77,26 +102,26 @@
 		<div class="headercontainer"><h1 style="margin-left:120px;"
  >To The New</h1>
 			<div class="navigation">
-				<a href="#box1id" style="color: grey; text-decoration: none;  margin-right:30px;" >first box</a>
-				<a href="#box2id" style="color: grey; text-decoration: none; margin-right:30px; ">second box</a>
-				<a href="#box4id" style="color: grey; text-decoration: none; margin-right:30px;" >images</a>
-				<a href="http://www.tothenew.com/" style="color: grey; text-decoration: none; margin-right:30px;">to the new</a>
-				<a href="http://www.tothenew.com/contact-us" style="color: grey; text-decoration: none; margin-right:30px;">contact us</a>
+				<a href="#box1id">first box</a>
+				<a href="#box2id">second box</a>
+				<a href="#box4id">images</a>
+				<a href="http://www.tothenew.com/" >to the new</a>
+				<a href="http://www.tothenew.com/contact-us">contact us</a>
 
 				
 			</div>	
 		</div>
 		<div class="bodycontainer">
-			<div class="box1" id="box1id" style=" height: 360px; text-align: center; line-height: 360px;color: white;"><h1>960 x 360 px</h1></div>
-			<div class="box2" id="box2id"style=" height: 80px; text-align: center; line-height: 40PX">RGHJDCJDSBNC DKJV KJD KJFDKJHDJBV XCJSFBJBJXGID J BVJ JVGBJV BVJDXVB JKIUGBFNJKD KDV IHVKJNIDFKJNIK C NDKJNKSDJHVNIDJKVIUHKJH NKJSDHDSKJHDFNCUI HNKFJ HVIDKUJFODSFH IU</div>
+			<div class="box1"><h1>960 x 360 px</h1></div>
+			<div class="box2" id="box2id">RGHJDCJDSBNC DKJV KJD KJFDKJHDJBV XCJSFBJBJXGID J BVJ JVGBJV BVJDXVB JKIUGBFNJKD KDV IHVKJNIDFKJNIK C NDKJNKSDJHVNIDJKVIUHKJH NKJSDHDSKJHDFNCUI HNKFJ HVIDKUJFODSFH IU</div>
 			</div>
-			<div class="box3" style="color: #737373; font-weight: bold;" > LATEST FROM GALLERY</div>
+			<div class="box3" > LATEST FROM GALLERY</div>
 			<hr style="margin-left: 120px; width: 960px;">
-			<div class="box4" id="box4id" style="display:flex;">
-					<div class="innerbox" id="img1" style="flex:1; background-image: url(nature1.jpeg);" >1<div style="background-color: lightgrey; height: 20px; margin-top: 280px ">nature1</div></div>
-					<div class="innerbox" style="flex:1; background-image: url(nature2.jpeg);">2<div style="background-color: lightgrey; height: 20px; margin-top: 280px ">nature2</div></div>
-					<div class="innerbox" style="flex:1; background-image: url(nature3.jpg); ">3<div style="background-color: lightgrey; height: 20px; margin-top: 280px ">nature3</div></div>
-					<div class="innerbox" style="flex:1; background-image: url(nature4.jpeg); ">4<div style="background-color: lightgrey; height: 20px; margin-top: 280px ">nature4</div></div>
+			<div class="box4">
+					<div class="innerbox" > <figure><img src="nature1.jpeg" id="img" ><figcaption>nature</figcaption></figure></div>
+					<div class="innerbox" > <figure><img src="nature2.jpeg" id="img" ><figcaption>nature</figcaption></figure></div>
+					<div class="innerbox" > <figure><img src="nature3.jpg" id="img" ><figcaption>nature</figcaption></figure></div>
+					<div class="innerbox"> <figure><img src="nature4.jpeg" id="img" ><figcaption>nature</figcaption></figure></div>
 			</div>
 		<div class="footercontainer" >
 			<span style="float:left; margin-left: 120px;">Copyright 2009-2017- All Rights Reserved - To The New </span>
